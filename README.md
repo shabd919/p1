@@ -172,7 +172,7 @@ class Test{
 		List<String> s=strings.stream().filter(l -> l.length()==6).collect(Collectors.toList());
 		System.out.println(s);
 	}
-}*/
+}
 
 
 
@@ -191,4 +191,17 @@ class Test{
 		
 		return sb.toString();
 		}
+	
+}*/
+
+class Test{
+	public static void main(String args[]) {
+		List strList; 
+		List<String> strings=Arrays.asList("Mumbai","Trichy","Delhi","Punjab","Banglore");
+		
+		List<String> s=strings.stream().filter(l -> l.length()==6).collect(Collectors.toList());
+				System.out.println(s);
+				System.out.println(s.size());
+				
+	}
 }
